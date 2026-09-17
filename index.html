@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Enterprise Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Enterprise Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="components.html">Components</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+
+        <aside aria-label="Sidebar navigation">
+            <h2>Dashboard Menu</h2>
+
+            <nav aria-label="Sidebar navigation">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#users">Users</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+
+            <section id="overview" aria-labelledby="overview-title">
+                <h2 id="overview-title">Dashboard Overview</h2>
+
+                <article>
+                    <h3>Total Users</h3>
+                    <p>1,250</p>
+                </article>
+
+                <article>
+                    <h3>Active Projects</h3>
+                    <p>24</p>
+                </article>
+
+                <article>
+                    <h3>Completed Tasks</h3>
+                    <p>486</p>
+                </article>
+            </section>
+
+            <section id="users" aria-labelledby="users-title">
+
+                <h2 id="users-title">User Information</h2>
+
+                <table>
+                    <caption>Enterprise user information</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Arun Kumar</td>
+                            <td>Development</td>
+                            <td>Active</td>
+                        </tr>
+
+                        <tr>
+                            <td>Priya Sharma</td>
+                            <td>Data Science</td>
+                            <td>Active</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rahul Singh</td>
+                            <td>Management</td>
+                            <td>Inactive</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <section id="reports" aria-labelledby="reports-title">
+
+                <h2 id="reports-title">Reports</h2>
+
+                <article>
+                    <h3>Monthly Report</h3>
+                    <p>
+                        The monthly enterprise report contains
+                        performance and activity information.
+                    </p>
+
+                    <a href="components.html">
+                        View report components
+                    </a>
+                </article>
+
+            </section>
+
+            <section id="settings" aria-labelledby="settings-title">
+
+                <h2 id="settings-title">Settings</h2>
+
+                <p>
+                    Use the Components page to access accessible
+                    forms and interface components.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Accessible Enterprise Dashboard</p>
+    </footer>
+
+</body>
+</html>
